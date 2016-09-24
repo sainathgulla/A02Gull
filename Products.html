@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Products Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="Products.css">
+</head>
+<body>
+
+<!--<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Online Store</h1>
+    <p>Mission, Vission & Values</p>
+  </div>
+</div>-->
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Sainaths Store</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Products.html">Products</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+<form action="" id="productsform" onsubmit="return false;">
+     <fieldset> 
+           <legend>Products </legend><br><br>
+
+            <!--<input type="radio" name="mobile" value="mobile" checked> Mobile<br><br>
+            <input type="radio" name="tv" value="tv"> TV<br><br>
+            <input type="radio" name="tablet" value="tablet"> Tablet<br><br>-->
+            <label>Select Product Type:</label><br><br>
+            <input type="radio" id="productchecked" name="mobile" value="1000" onclick="getTotalProductPrice()"> Mobile<br><br>
+            <input type="radio" id="productchecked" name="tv" value="10000" onclick="getTotalProductPrice()"> TV<br><br>
+            <input type="radio" id="productchecked" name="tablet" value="50000" onclick="getTotalProductPrice()"> Tablet<br><br>
+
+            <label>Need an Insurance ??</label><br><br>
+
+            <input type="radio" name="insuranceselected" value="500" onclick="getTotalProductPrice()" > Yes<br><br>
+            <input type="radio" name="insuranceselected" value="0" onclick="getTotalProductPrice()"> NO<br><br>
+
+            <label>Quantity </label><br><br>
+
+             <select id="numberselected" onchange="getTotalProductPrice()">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            
+            <br><br><br>
+            
+            <input type="submit" value="Buy" onclick="getTotalProductPrice()"> <br><br>
+
+            
+     </fieldset>  
+     
+  </form>
+  <span id="totalPrice"> </span>  
+</div><br><br>
+
+<footer class="container-fluid text-center">
+  <p>Sainath Store Copyright</p>
+</footer>
+<script src="Products1.js"></script>
+</body>
+</html>
+

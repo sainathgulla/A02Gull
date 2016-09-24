@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Products Contact</title>
+ <!-- <link rel="stylesheet" type="text/css" href="Contact.css">-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="Contact.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Sainaths Store</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="Home.html">Home</a></li>
+        <li class="#"><a href="About.html">About</a></li>
+        <li><a href="Products.html">Products</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <form id="contact">
+            
+            <label for="name">Your Name: *</label> <br>
+            <input type="text" id="name" name="name" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus"><br><br>
+
+            <label for="phone">Phone Number:</label> <br>
+            <input type="text" id="phone" name="phone" placeholder="Your Phone" required="required" tabindex="1" autofocus="autofocus"><br><br>
+
+            <label for="email">Email: *</label> <br>
+            <input type="text" id="email" name="email" placeholder="Your Email" tabindex="2" required="required" ><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="comments" placeholder="Please write your message here." tabindex="5" required="required" rows="10" cols="70"></textarea> <br><br><br>
+
+            <button type="submit" value="submit" id="submit">Send </button><br><br>
+                   
+        </form>
+
+</div><br><br>
+
+
+<footer class="container-fluid text-center">
+  <p>Sainath Store Copyright</p>
+</footer>
+
+<script src="Products.js"></script>
+</body>
+</html>
+
